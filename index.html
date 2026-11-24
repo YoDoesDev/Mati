@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f6f2e9">
+  <title>MATI — Made by hand, rooted in culture</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="announcement">A marketplace of makers · Discover the story behind every craft</div>
+
+  <header class="header">
+    <div class="wrap nav">
+      <a class="brand" href="#">
+        <span class="logo">MATI</span>
+        <span class="tag">MADE BY HAND · ROOTED IN CULTURE</span>
+      </a>
+
+      <nav class="links" aria-label="Primary navigation">
+        <a href="#shop">Shop all</a>
+        <a href="#categories">Collections</a>
+        <a href="#story">Our story</a>
+        <a href="#journal">Craft journal</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button type="button" class="iconbtn" id="searchBtn" aria-label="Search">⌕</button>
+        <button type="button" class="iconbtn" id="wishlistBtn" aria-label="Wishlist">
+          ♡ <span id="wishCount" style="font-size:10px">0</span>
+        </button>
+        <button type="button" class="cartbtn" id="cartBtn">
+          Bag <span id="cartCount">0</span>
+        </button>
+        <button type="button" class="iconbtn mobile-menu" id="mobileMenuBtn" aria-label="Jump to categories">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero wrap">
+      <div class="hero-grid">
+        <div class="hero-copy">
+          <span class="eyebrow">A little piece of India, for your everyday</span>
+          <h1>Rooted in<br>tradition.<br>Made for you.</h1>
+          <p>Discover meaningful handmade pieces from India’s rich craft traditions. Thoughtful finds for your home, your wardrobe and the people you love.</p>
+          <a class="btn" href="#shop">Explore the collection&nbsp; ↗</a>
+        </div>
+        <div class="hero-image">
+          <div class="hero-stamp">CRAFTED<br>WITH<br>MEANING ✳</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section wrap" id="categories">
+      <div class="section-head">
+        <div>
+          <span class="eyebrow">Find your kind of craft</span>
+          <h2>Explore by category</h2>
+          <p class="sub">Objects for everyday rituals, made with care.</p>
+        </div>
+        <a class="textlink" href="#shop" data-category="All">View all products ↗</a>
+      </div>
+
+      <div class="category-grid">
+        <a class="category" href="#shop" data-category="Jewellery">
+          <img src="https://goswadeshi.in/cdn/shop/files/82c_1800x1800.jpg?v=1735570161" alt="Handcrafted traditional jewellery">
+          <span>Jewellery</span>
+        </a>
+        <a class="category" href="#shop" data-category="Bags">
+          <img src="https://sumaavi.in/cdn/shop/files/BGP00035.jpg?v=1731566075" alt="Handmade fabric and craft bags">
+          <span>Bags &amp; carry</span>
+        </a>
+        <a class="category" href="#shop" data-category="Home">
+          <img src="https://themeghalayanage.store/cdn/shop/files/PER_8573_S.jpg?v=1741849809&width=940" alt="Handwoven home and living craft">
+          <span>Home &amp; living</span>
+        </a>
+        <a class="category" href="#shop" data-category="Art">
+          <img src="https://urliutsav.com/cdn/shop/files/warli-wall-art1.jpg?v=1719558674" alt="Traditional Indian folk art">
+          <span>Art &amp; objects</span>
+        </a>
+      </div>
+    </section>
+
+    <section class="section wrap" id="shop">
+      <div class="section-head">
+        <div>
+          <span class="eyebrow">Collected with care</span>
+          <h2>Find something meaningful</h2>
+          <p class="sub">Handmade treasures for everyday living.</p>
+        </div>
+        <span class="sub" id="resultCount">0 pieces</span>
+      </div>
+
+      <div class="toolbar">
+        <div class="filters" id="categoryFilters">
+          <button type="button" class="filter active" data-category="All">All</button>
+          <button type="button" class="filter" data-category="Jewellery">Jewellery</button>
+          <button type="button" class="filter" data-category="Bags">Bags</button>
+          <button type="button" class="filter" data-category="Home">Home</button>
+          <button type="button" class="filter" data-category="Art">Art</button>
+        </div>
+        <input type="search" class="search" id="search" placeholder="Search the collection…">
+      </div>
+
+      <div class="products" id="products"></div>
+    </section>
+
+    <section class="wrap">
+      <div class="story" id="story">
+        <img src="https://themeghalayanage.store/cdn/shop/files/PER_8573_S.jpg?v=1741849809&width=940" alt="Handwoven bamboo craft product">
+        <div class="story-copy">
+          <span class="eyebrow">The thought behind MATI</span>
+          <h2>Not just things.<br>Stories you can keep.</h2>
+          <p>Every handmade object carries traces of a place, a tradition and the hands that shaped it. MATI makes it easier to discover these details and bring thoughtful craft into your everyday life.</p>
+          <p>We believe shopping can be beautiful, personal and respectful of the cultures that inspire each piece.</p>
+          <a class="btn" href="#journal">Discover our world ↗</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section wrap" id="journal">
+      <div class="section-head">
+        <div>
+          <span class="eyebrow">A closer look at craft</span>
+          <h2>Stories behind the details</h2>
+          <p class="sub">Explore the textures, techniques and inspirations behind handmade traditions.</p>
+        </div>
+      </div>
+
+      <div class="artisan-row">
+        <article class="artisan">
+          <img src="https://urliutsav.com/cdn/shop/files/warli-wall-art1.jpg?v=1719558674" alt="Warli-inspired folk art">
+          <div>
+            <span class="maker">ART &amp; STORYTELLING</span>
+            <h3>Art that speaks in symbols</h3>
+            <p>Discover visual storytelling traditions and the patterns that connect art, community and everyday life.</p>
+          </div>
+        </article>
+        <article class="artisan">
+          <img src="https://themeghalayanage.store/cdn/shop/files/PER_8573_S.jpg?v=1741849809&width=940" alt="Handwoven bamboo basket">
+          <div>
+            <span class="maker">NATURAL MATERIALS</span>
+            <h3>Beauty in the everyday</h3>
+            <p>From woven baskets to useful home objects, explore the warmth and character of natural materials.</p>
+          </div>
+        </article>
+        <article class="artisan">
+          <img src="https://goswadeshi.in/cdn/shop/files/82c_1800x1800.jpg?v=1735570161" alt="Handcrafted necklace">
+          <div>
+            <span class="maker">HANDMADE ADORNMENT</span>
+            <h3>Small details, lasting stories</h3>
+            <p>Find expressive accessories and keepsakes inspired by regional craft traditions across India.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section wrap customer-love">
+      <div class="love-inner">
+        <span class="eyebrow">The MATI promise</span>
+        <h2>Good things, made meaningful.</h2>
+        <div class="promise-grid">
+          <div>
+            <b>✳ Thoughtful finds</b>
+            <p>Pieces selected for their craft, character and everyday usefulness.</p>
+          </div>
+          <div>
+            <b>♡ Stories with respect</b>
+            <p>Cultural context shared carefully, with maker consent and accurate details.</p>
+          </div>
+          <div>
+            <b>↗ A considered experience</b>
+            <p>Simple discovery, clear product information and a customer-first shopping journey.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section wrap" id="help">
+      <div class="section-head">
+        <div>
+          <span class="eyebrow">Here when you need us</span>
+          <h2>A little help goes a long way.</h2>
+          <p class="sub">Questions about a product, delivery or your order? Our customer care section is here to guide you.</p>
+        </div>
+      </div>
+
+      <div class="promise-grid">
+        <div>
+          <b>Delivery &amp; tracking</b>
+          <p>In a live store, find delivery timelines and follow your order from dispatch to doorstep.</p>
+        </div>
+        <div>
+          <b>Returns &amp; exchanges</b>
+          <p>Clear return eligibility and exchange information should be shown before checkout.</p>
+        </div>
+        <div>
+          <b>Talk to MATI</b>
+          <p>Email <a href="mailto:hello@mati.example">hello@mati.example</a> for this prototype concept.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap">
+      <div class="footer-grid">
+        <div>
+          <div class="logo">MATI</div>
+          <p>Tradition, made to be lived.<br>Discover handmade pieces and the stories that make them special.</p>
+        </div>
+        <div>
+          <b>Discover</b>
+          <a href="#shop">Shop all</a>
+          <a href="#categories">Categories</a>
+          <a href="#journal">Craft journal</a>
+        </div>
+        <div>
+          <b>About MATI</b>
+          <a href="#story">Our story</a>
+          <a href="#help">Customer care</a>
+          <a href="#journal">Craft journal</a>
+        </div>
+        <div>
+          <b>Need help?</b>
+          <a href="mailto:hello@mati.example">Contact us</a>
+          <a href="#help">Shipping &amp; returns</a>
+          <a href="#help">FAQs</a>
+        </div>
+      </div>
+      <div class="copyright">
+        © 2026 MATI Marketplace · Concept prototype. Product listings and prices are illustrative. Product photographs are visual references; obtain image rights and artisan consent before commercial use. Checkout is a demo and no live orders or payments are processed.
+      </div>
+    </div>
+  </footer>
+
+  <div class="overlay" id="overlay"></div>
+
+  <aside class="drawer" id="drawer" aria-label="Shopping bag">
+    <div class="drawer-head">
+      <h2>Your bag</h2>
+      <button type="button" class="close" id="closeCartBtn" aria-label="Close bag">×</button>
+    </div>
+    <div class="cart-items" id="cartItems"></div>
+    <div class="cart-total" id="cartTotal"></div>
+  </aside>
+
+  <div class="modal" id="productModal" aria-modal="true">
+    <div class="modal-card" id="modalContent"></div>
+  </div>
+
+  <div class="modal" id="checkoutModal" aria-modal="true">
+    <div class="modal-card">
+      <button type="button" class="close" id="closeCheckoutBtn" style="float:right" aria-label="Close checkout">×</button>
+      <span class="eyebrow">A thoughtful purchase</span>
+      <h2>Checkout preview</h2>
+      <p>This is a visual checkout demonstration. No payment details are collected and no order will be placed.</p>
+
+      <form id="checkoutForm">
+        <div class="checkout-step">
+          <b>1</b>
+          <div>
+            <strong>Delivery details</strong>
+            <input type="text" class="field" name="fullName" placeholder="Full name" required>
+            <input type="tel" class="field" name="phone" placeholder="Mobile number" required>
+            <textarea class="field" name="address" rows="3" placeholder="Delivery address" required></textarea>
+          </div>
+        </div>
+
+        <div class="checkout-step">
+          <b>2</b>
+          <div>
+            <strong>Delivery preference</strong>
+            <select class="field" name="delivery">
+              <option>Standard delivery · 5–7 business days</option>
+              <option>Express delivery · availability dependent</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="checkout-step">
+          <b>3</b>
+          <div>
+            <strong>Payment method</strong>
+            <select class="field" name="payment">
+              <option>UPI (preview only)</option>
+              <option>Card (preview only)</option>
+              <option>Cash on delivery (if supported)</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="notice">A live MATI checkout would use a payment provider, server-side payment verification, secure order records and shipping integrations.</div>
+        <button type="submit" class="btn">Finish preview</button>
+      </form>
+    </div>
+  </div>
+</body>
+  <script src="main.js" type="module" defer></script>
+</html>
