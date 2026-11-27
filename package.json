@@ -1,0 +1,12 @@
+{
+  "name": "Mati",
+  "version": "1.0.0",
+  "description": "A basic marketing platform for local farmers",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
